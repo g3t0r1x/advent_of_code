@@ -1,11 +1,13 @@
 #!/bin/bash
 
-echo "Cloning googletest repository... " -n
-git clone https://github.com/google/googletest
-echo "DONE"
+if [[ ! -d /googletest ]]; then
+    echo "Cloning googletest repository..."
+    git clone https://github.com/google/googletest
+fi
 
-echo "Cloning logger repository... " -n
-cd src
-git clone https://github.com/g3t0r1x/logger
-cd ..
-echo "DONE"
+if [[ ! -d /src/logger]]; then
+    echo "Cloning logger repository..."
+    cd src
+    git clone https://github.com/g3t0r1x/logger
+    cd ..
+fi

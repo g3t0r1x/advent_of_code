@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(This 2019_day_1)
+set(This 2019_day1)
 
 set(Headers
+    Converter.hpp
     Fuel.hpp
     Module.hpp
 )
 
 set(Sources
-    Fuel.cpp
-    Module.cpp
+    Converter.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})

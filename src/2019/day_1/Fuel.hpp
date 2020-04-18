@@ -5,16 +5,11 @@
 #ifndef __SRC__2019__DAY_1__FUEL_HPP__
 #define __SRC__2019__DAY_1__FUEL_HPP__
 
-#include "logger/Logger.hpp"
+#include <cstdint>
 
-class Fuel
+struct Fuel
 {
-public:
-    explicit Fuel(const uint64_t mass);
-
-private:
-    uint64_t value_;
-    Logger logger_;
+    uint64_t value;
 };
 
 #endif // __SRC__2019__DAY_1__FUEL_HPP__

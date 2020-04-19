@@ -4,6 +4,8 @@
 
 #include "Converter.hpp"
 
+namespace year2019_day1
+{
 namespace impl
 {
 
@@ -22,3 +24,4 @@ Fuel Converter::invoke(const Module& module) const
 }
 
 } // namespace impl
+} // namespace year2019_day1

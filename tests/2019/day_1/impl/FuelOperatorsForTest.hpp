@@ -5,6 +5,8 @@
 #include <ostream>
 #include "2019/day_1/impl/Fuel.hpp"
 
+namespace year2019_day1
+{
 namespace impl
 {
 
@@ -19,3 +21,4 @@ std::ostream& operator<<(std::ostream& os, const Fuel& fuel)
 }
 
 } // namespace impl
+} // namespace year2019_day1

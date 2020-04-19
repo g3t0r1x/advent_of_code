@@ -3,12 +3,14 @@ cmake_minimum_required(VERSION 3.8)
 set(This 2019_day1_tests)
 
 set(Headers
-    ConverterFixture.hpp
-    FuelOperatorsForTest.hpp
+    FuelCounterUpperFixture.hpp
+    impl/ConverterFixture.hpp
+    impl/FuelOperatorsForTest.hpp
 )
 
 set(Sources
-    ConverterTests.cpp
+    FuelCounterUpperTests.cpp
+    impl/ConverterTests.cpp
 )
 
 add_executable(${This} ${Sources})

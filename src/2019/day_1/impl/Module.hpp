@@ -7,6 +7,8 @@
 
 #include <cstdint>
 
+namespace year2019_day1
+{
 namespace impl
 {
 
@@ -16,5 +18,6 @@ struct Module
 };
 
 } // namespace impl
+} // namespace year2019_day1
 
 #endif // __SRC__2019__DAY_1__IMPL__MODULE_HPP__

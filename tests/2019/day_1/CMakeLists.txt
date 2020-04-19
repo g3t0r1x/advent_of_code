@@ -16,7 +16,7 @@ add_executable(${This} ${Sources})
 target_link_libraries(${This} PUBLIC
     gmock_main
     gtest_main
-    2019_day1
+    2019_day1_lib
 )
 
 add_test(

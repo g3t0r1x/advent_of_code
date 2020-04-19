@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(This 2019_day1)
+set(This_lib 2019_day1_lib)
+set(This_bin 2019_day1_bin)
 
 set(Headers
     Converter.hpp
@@ -8,9 +9,17 @@ set(Headers
     Module.hpp
 )
 
-set(Sources
+set(Sources_lib
     Converter.cpp
 )
 
-add_library(${This} STATIC ${Sources} ${Headers})
-target_link_libraries(${This} PUBLIC SrcFiles)
+set(Sources_bin
+    ${Sources_lib}
+    main.cpp
+)
+
+add_library(${This_lib} STATIC ${Sources_lib} ${Headers})
+target_link_libraries(${This_lib} PUBLIC SrcFiles)
+
+add_executable(${This_bin} ${Sources_bin})
+target_link_libraries(${This_bin} PUBLIC SrcFiles)

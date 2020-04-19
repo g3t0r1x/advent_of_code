@@ -16,10 +16,11 @@ Converter::Converter()
 
 Fuel Converter::invoke(const Module& module) const
 {
-    logger_ << info << "Converting mass: " << module.mass;
-    uint64_t value = module.mass / 3 - 2;
+    logger_ << debug << "Converting mass: " << module.mass;
+    int64_t calculated = module.mass / 3 - 2;
+    uint64_t value = calculated > 0 ? calculated : 0;
 
-    logger_ << info << "Returning fuel: " << value;
+    logger_ << debug << "Returning fuel: " << value;
     return Fuel{value};
 }
 

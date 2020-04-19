@@ -4,6 +4,7 @@ set(This_lib 2019_day1_lib)
 set(This_bin 2019_day1_bin)
 
 set(Headers
+    EquationDoubleChecker.hpp
     FuelCounterUpper.hpp
     Interpreter.hpp
     impl/Converter.hpp
@@ -12,6 +13,7 @@ set(Headers
 )
 
 set(Sources_lib
+    EquationDoubleChecker.cpp
     FuelCounterUpper.cpp
     impl/Converter.cpp
 )

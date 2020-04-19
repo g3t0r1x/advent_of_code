@@ -15,6 +15,12 @@ namespace impl
 struct Fuel
 {
     uint64_t value;
+
+    inline Fuel& operator+= (const Fuel& other)
+    {
+        value += other.value;
+        return *this;
+    }
 };
 
 } // namespace impl

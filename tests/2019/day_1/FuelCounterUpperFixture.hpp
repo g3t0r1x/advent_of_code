@@ -21,10 +21,10 @@ namespace ut
 using MassesVec = std::vector<uint64_t>;
 using TotalFuel = uint64_t;
 
-class ForProvidedMasses : public ::testing::TestWithParam<std::tuple<MassesVec, TotalFuel>>
+class FuelCounterUpperShould : public ::testing::TestWithParam<std::tuple<MassesVec, TotalFuel>>
 {
 public:
-    ForProvidedMasses()
+    FuelCounterUpperShould()
         : sut_()
     {
     }

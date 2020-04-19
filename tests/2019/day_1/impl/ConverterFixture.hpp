@@ -22,7 +22,8 @@ namespace ut
 class ForProvidedModule : public ::testing::TestWithParam<std::tuple<Module, Fuel>>
 {
 public:
-    ForProvidedModule() : sut_()
+    ForProvidedModule()
+        : sut_()
     {
     }
 

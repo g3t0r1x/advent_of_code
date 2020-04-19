@@ -24,7 +24,8 @@ using TotalFuel = uint64_t;
 class ForProvidedMasses : public ::testing::TestWithParam<std::tuple<MassesVec, TotalFuel>>
 {
 public:
-    ForProvidedMasses() : sut_()
+    ForProvidedMasses()
+        : sut_()
     {
     }
 

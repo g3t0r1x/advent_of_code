@@ -8,7 +8,7 @@
 #include "Fuel.hpp"
 #include "Module.hpp"
 
-#include "logger/Logger.hpp"
+#include "utils/Logger.hpp"
 
 class Converter
 {

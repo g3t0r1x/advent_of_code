@@ -1,6 +1,1 @@
-[submodule "googletest"]
-	path = googletest
-	url = https://github.com/google/googletest
-[submodule "src/utils/logger"]
-	path = src/utils/logger
-	url = https://github.com/g3t0r1x/logger
+

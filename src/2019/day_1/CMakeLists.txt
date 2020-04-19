@@ -4,13 +4,16 @@ set(This_lib 2019_day1_lib)
 set(This_bin 2019_day1_bin)
 
 set(Headers
-    Converter.hpp
-    Fuel.hpp
-    Module.hpp
+    FuelCounterUpper.hpp
+    Interpreter.hpp
+    impl/Converter.hpp
+    impl/Fuel.hpp
+    impl/Module.hpp
 )
 
 set(Sources_lib
-    Converter.cpp
+    FuelCounterUpper.cpp
+    impl/Converter.cpp
 )
 
 set(Sources_bin

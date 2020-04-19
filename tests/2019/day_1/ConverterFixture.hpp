@@ -10,12 +10,12 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include "2019/day_1/Converter.hpp"
+#include "2019/day_1/impl/Converter.hpp"
 
 namespace ut
 {
 
-class ForProvidedModule : public ::testing::TestWithParam<std::tuple<Module, Fuel>>
+class ForProvidedModule : public ::testing::TestWithParam<std::tuple<impl::Module, impl::Fuel>>
 {
 public:
     ForProvidedModule() : sut_()
@@ -23,7 +23,7 @@ public:
     }
 
 protected:
-    Converter sut_;
+    impl::Converter sut_;
 };
 
 } // namespace ut

@@ -18,10 +18,10 @@ TEST_P(ForProvidedModule, ReturnCorrectFuel)
 
 INSTANTIATE_TEST_SUITE_P(ConverterShould, ForProvidedModule,
     ::testing::Values(
-        std::make_tuple(Module{12u}, Fuel{2u}),
-        std::make_tuple(Module{14u}, Fuel{2u}),
-        std::make_tuple(Module{1969u}, Fuel{654u}),
-        std::make_tuple(Module{100756u}, Fuel{33583u})
+        std::make_tuple(impl::Module{12u}, impl::Fuel{2u}),
+        std::make_tuple(impl::Module{14u}, impl::Fuel{2u}),
+        std::make_tuple(impl::Module{1969u}, impl::Fuel{654u}),
+        std::make_tuple(impl::Module{100756u}, impl::Fuel{33583u})
     ));
 
 } // namespace ut

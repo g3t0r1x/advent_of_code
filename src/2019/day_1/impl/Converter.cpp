@@ -4,6 +4,9 @@
 
 #include "Converter.hpp"
 
+namespace impl
+{
+
 Converter::Converter()
     : logger_("Converter")
 {
@@ -14,6 +17,8 @@ Fuel Converter::invoke(const Module& module) const
     logger_ << info << "Converting mass: " << module.mass;
     uint64_t value = module.mass / 3 - 2;
 
-    logger_ << answer << "Returning fuel: " << value;
+    logger_ << info << "Returning fuel: " << value;
     return Fuel{value};
 }
+
+} // namespace impl

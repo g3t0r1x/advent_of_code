@@ -18,11 +18,11 @@ FuelCounterUpper::FuelCounterUpper()
 uint64_t FuelCounterUpper::calculate(const std::vector<uint64_t>& masses)
 {
     uint64_t sum = std::accumulate(std::cbegin(masses), std::cend(masses), 0,
-        [this](const auto& sum, const auto& mass)
+        [this](const auto& partialSum, const auto& mass)
         {
             logger_ << info << "Starting conversion for module with total mass: " << mass;
             const auto fuel = converter_.invoke(impl::Module{mass});
-            return sum + fuel.value;
+            return partialSum + fuel.value;
         });
 
     logger_ << answer << "Total fuel required: " << sum;

@@ -6,6 +6,7 @@
 #define __SRC__UTILS__FILE_PARSER__INTERPRETER_HPP__
 
 #include <string>
+#include <vector>
 
 namespace fileparser
 {
@@ -15,9 +16,8 @@ class Interpreter
 {
 public:
     virtual ~Interpreter() = default;
-    virtual T invokeFor(const std::string& line) const = 0;
+    virtual std::vector<T> invokeFor(const std::string& line) const = 0;
 };
-
 
 } // namespace fileparser
 

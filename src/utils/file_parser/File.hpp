@@ -36,7 +36,8 @@ public:
 
         while(getline(inFile_, line))
         {
-            vec.push_back(interpreter.invokeFor(line));
+            const auto result = interpreter.invokeFor(line);
+            vec.insert(std::cend(vec), std::cbegin(result), std::cend(result));
         }
 
         return vec;

@@ -12,5 +12,5 @@ export CXX=/usr/local/gcc-8.2/bin/g++-8.2
 mkdir -p build
 cd build
 cmake ..
-make
+make -j
 cd ..

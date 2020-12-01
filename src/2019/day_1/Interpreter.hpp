@@ -13,9 +13,9 @@ namespace year2019_day1
 class Interpreter : public fileparser::Interpreter<uint64_t>
 {
 public:
-    uint64_t invokeFor(const std::string& line) const override
+    std::vector<uint64_t> invokeFor(const std::string& line) const override
     {
-        return std::stoi(line);
+        return {std::stoul(line)};
     };
 };
 

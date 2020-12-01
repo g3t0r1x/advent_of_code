@@ -23,7 +23,7 @@ namespace ut
 using Entries = std::vector<uint64_t>;
 using Limit = uint64_t;
 using ExpectedPairResult = std::pair<uint64_t, uint64_t>;
-using ExpectedTrioResult = std::tuple<uint64_t, uint64_t, uint64_t>;
+using ExpectedTripletResult = std::tuple<uint64_t, uint64_t, uint64_t>;
 
 class ExpensesReportBase
 {
@@ -39,15 +39,15 @@ protected:
     std::unique_ptr<ExpensesReport> sut_;
 };
 
-class ExpensesReportShouldFindTwoEntries
+class ExpensesReportShouldFindPair
     : public ExpensesReportBase
     , public ::testing::TestWithParam<std::tuple<Entries, Limit, ExpectedPairResult>>
 {
 };
 
-class ExpensesReportShouldFindThreeEntries
+class ExpensesReportShouldFindTriplet
     : public ExpensesReportBase
-    , public ::testing::TestWithParam<std::tuple<Entries, Limit, ExpectedTrioResult>>
+    , public ::testing::TestWithParam<std::tuple<Entries, Limit, ExpectedTripletResult>>
 {
 };
 

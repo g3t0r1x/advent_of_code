@@ -15,7 +15,7 @@ ExpensesReport::ExpensesReport(const std::vector<uint64_t>& entries)
 {
 }
 
-std::pair<uint64_t, uint64_t> ExpensesReport::findTwoEntriesSumingTo(const uint64_t limit)
+std::pair<uint64_t, uint64_t> ExpensesReport::findPairSumingTo(const uint64_t limit)
 {
     if (entries_.empty())
     {
@@ -40,7 +40,7 @@ std::pair<uint64_t, uint64_t> ExpensesReport::findTwoEntriesSumingTo(const uint6
     return {0, 0};
 }
 
-std::tuple<uint64_t, uint64_t, uint64_t> ExpensesReport::findThreeEntriesSumingTo(const uint64_t limit)
+std::tuple<uint64_t, uint64_t, uint64_t> ExpensesReport::findTripletSumingTo(const uint64_t limit)
 {
     if (entries_.size() < 3)
     {

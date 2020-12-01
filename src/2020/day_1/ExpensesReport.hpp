@@ -20,8 +20,8 @@ class ExpensesReport
 {
 public:
     explicit ExpensesReport(const std::vector<uint64_t>& entries);
-    std::pair<uint64_t, uint64_t> findTwoEntriesSumingTo(const uint64_t limit);
-    std::tuple<uint64_t, uint64_t, uint64_t> findThreeEntriesSumingTo(const uint64_t limit);
+    std::pair<uint64_t, uint64_t> findPairSumingTo(const uint64_t limit);
+    std::tuple<uint64_t, uint64_t, uint64_t> findTripletSumingTo(const uint64_t limit);
 
 private:
     std::vector<uint64_t> entries_;

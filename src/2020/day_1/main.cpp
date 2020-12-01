@@ -17,13 +17,13 @@ int main()
 
         {
             logger << info << "Solving 2020 day 1, part 1...";
-            const auto& [entry_1, entry_2] = year2020_day1::ExpensesReport(input).findTwoEntriesSumingTo(2020);
+            const auto& [entry_1, entry_2] = year2020_day1::ExpensesReport(input).findPairSumingTo(2020);
             logger << answer << "2020 day1, part 1: " << entry_1 << " * " << entry_2 << " = " << entry_1 * entry_2;
         }
 
         {
             logger << info << "Solving 2020 day 1, part 2...";
-            const auto& [entry_1, entry_2, entry_3] = year2020_day1::ExpensesReport(input).findThreeEntriesSumingTo(2020);
+            const auto& [entry_1, entry_2, entry_3] = year2020_day1::ExpensesReport(input).findTripletSumingTo(2020);
             logger << answer << "2020 day1, part 2: " << entry_1 << " * " << entry_2 << " * " << entry_3 << " = " << entry_1 * entry_2 * entry_3;
         }
 

@@ -2,8 +2,8 @@
  * Copyright by g3t0r1x. All rights reserved.
  */
 
-#ifndef __TESTS__2019__DAY_1__EQUATIONDOUBLECHECKERFIXTURE_HPP__
-#define __TESTS__2019__DAY_1__EQUATIONDOUBLECHECKERFIXTURE_HPP__
+#ifndef __TESTS__2019__DAY_1__UT__EQUATIONDOUBLECHECKERFIXTURE_HPP__
+#define __TESTS__2019__DAY_1__UT__EQUATIONDOUBLECHECKERFIXTURE_HPP__
 
 #include <tuple>
 #include <vector>
@@ -36,4 +36,4 @@ protected:
 } // namespace ut
 } // namespace year2019_day1
 
-#endif // __TESTS__2019__DAY_1__EQUATIONDOUBLECHECKERFIXTURE_HPP__
+#endif // __TESTS__2019__DAY_1__UT__EQUATIONDOUBLECHECKERFIXTURE_HPP__

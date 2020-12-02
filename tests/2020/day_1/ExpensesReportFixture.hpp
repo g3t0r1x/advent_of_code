@@ -2,8 +2,8 @@
  * Copyright by g3t0r1x. All rights reserved.
  */
 
-#ifndef __TESTS__2020__DAY_1__EXPENSESREPORTFIXTURE_HPP__
-#define __TESTS__2020__DAY_1__EXPENSESREPORTFIXTURE_HPP__
+#ifndef __TESTS__2020__DAY_1__UT__EXPENSESREPORTFIXTURE_HPP__
+#define __TESTS__2020__DAY_1__UT__EXPENSESREPORTFIXTURE_HPP__
 
 #include <memory>
 #include <tuple>
@@ -56,4 +56,4 @@ class ExpensesReportShouldFindTriplet
 } // namespace ut
 } // namespace year2020_day1
 
-#endif // __TESTS__2020__DAY_1__EXPENSESREPORTFIXTURE_HPP__
+#endif // __TESTS__2020__DAY_1__UT__EXPENSESREPORTFIXTURE_HPP__

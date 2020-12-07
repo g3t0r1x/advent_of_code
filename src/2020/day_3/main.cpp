@@ -21,12 +21,12 @@ int main()
         const auto tobogan = std::make_shared<year2020_day3::Tobogan>(year2020_day3::Coords{0, 0});
         year2020_day3::Geology geology(map, tobogan);
 
-        logger << info << "Solving 2020 day 2, part 1...";
+        logger << info << "Solving 2020 day 3, part 1...";
 
         uint64_t run1 = geology.moveToboggan(year2020_day3::Coords{3, 1});
         logger << answer << "2020 day1, part 1: Found trees: " << run1;
 
-        logger << info << "Solving 2020 day 2, part 2...";
+        logger << info << "Solving 2020 day 3, part 2...";
 
         tobogan->reset(year2020_day3::Coords{0, 0});
         uint64_t run2 = geology.moveToboggan(year2020_day3::Coords{1, 1});

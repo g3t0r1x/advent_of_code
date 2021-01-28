@@ -20,11 +20,11 @@ int main()
 
         logger << info << "Solving 2020 day 2, part 1...";
         passwords.setStrategy(std::make_shared<year2020_day2::strategies::MinMax>());
-        logger << answer << "2020 day1, part 1: matching passwords: " << passwords.countValid();
+        logger << answer << "2020 day2, part 1: matching passwords: " << passwords.countValid();
 
         logger << info << "Solving 2020 day 2, part 2...";
         passwords.setStrategy(std::make_shared<year2020_day2::strategies::Position>());
-        logger << answer << "2020 day1, part 2: matching passwords: " << passwords.countValid();
+        logger << answer << "2020 day2, part 2: matching passwords: " << passwords.countValid();
 
         return 0;
     }

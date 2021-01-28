@@ -18,10 +18,10 @@ int main()
         const auto passports = year2020_day4::Batch(input).convertToPassports();
 
         logger << info << "Solving 2020 day 4, part 1...";
-        logger << answer << "2020 day1, part 1: Valid passports: " << year2020_day4::passport::Scanner().prevalidate(passports);
+        logger << answer << "2020 day4, part 1: Valid passports: " << year2020_day4::passport::Scanner().prevalidate(passports);
 
         logger << info << "Solving 2020 day 4, part 2...";
-        logger << answer << "2020 day1, part 2: Valid passports: " << year2020_day4::passport::Scanner().validate(passports);
+        logger << answer << "2020 day4, part 2: Valid passports: " << year2020_day4::passport::Scanner().validate(passports);
 
         return 0;
     }

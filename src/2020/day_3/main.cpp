@@ -24,7 +24,7 @@ int main()
         logger << info << "Solving 2020 day 3, part 1...";
 
         uint64_t run1 = geology.moveToboggan(year2020_day3::Coords{3, 1});
-        logger << answer << "2020 day1, part 1: Found trees: " << run1;
+        logger << answer << "2020 day3, part 1: Found trees: " << run1;
 
         logger << info << "Solving 2020 day 3, part 2...";
 
@@ -40,8 +40,8 @@ int main()
         tobogan->reset(year2020_day3::Coords{0, 0});
         uint64_t run5 = geology.moveToboggan(year2020_day3::Coords{1, 2});
 
-        logger << info << "2020 day1, part 2: Found trees: " << run1 << ", " << run2 << ", " << run3 << ", " << run4 << ", " << run5;
-        logger << answer << "2020 day1, part 2: Multiplied together: " << run1 * run2 * run3 * run4 * run5;
+        logger << info << "2020 day3, part 2: Found trees: " << run1 << ", " << run2 << ", " << run3 << ", " << run4 << ", " << run5;
+        logger << answer << "2020 day3, part 2: Multiplied together: " << run1 * run2 * run3 * run4 * run5;
 
         return 0;
     }
